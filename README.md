@@ -1,5 +1,6 @@
-# Ensure.NET
-Inpired by CodeContracts, small piece of code that allows you to lower the ciclomatic complexity of code by removing some branching.
+## Installing
+Package manager: Install-Package Ensure4Net
+.NET CLI: dotnet add package Ensure4Net
 
 # Ensure.NET
 Inpired by CodeContracts, small piece of code that allows you to lower the ciclomatic complexity of code by removing some branching.
