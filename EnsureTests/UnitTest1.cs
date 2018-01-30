@@ -73,6 +73,34 @@ namespace EnsureTests
                 Ensure.Condition(() => foo == goo, ref foo, boo);
                 Assert.False(foo == boo);
             }
+
+            private void Foo()
+            {
+                
+                if (foo == goo)
+                    foo = boo;
+
+                Ensure.Condition(foo == boo, ref foo, boo);
+
+                if (foo == null)
+                    throw new NullReferenceException();
+
+                Ensure.Condition(foo == boo, new NullReferenceException());
+
+                if (ObjectIsValid(foo))
+                    DoSomething();
+
+                Ensure.Condition(() => ObjectIsValid(foo), () => DoSomething());
+            }
+
+            private void DoSomething() { 
+}
+
+            private bool ObjectIsValid(int a)
+            {
+                return true;
+            }
+
         }
     }
 }

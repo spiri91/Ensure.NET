@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageId>Ensure4Net</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>SPIRI91</Authors>
+    <Description>
+      Inpired by CodeContracts, small piece of code that allows you to lower the ciclomatic complexity of code by removing some branching.
+      Branching like most precondition, if - else - throw or if - else - set value.
+    </Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>branching if statements ciclomatic complexity</PackageTags>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.3\Ensure.NET.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
