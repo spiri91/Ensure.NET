@@ -1,5 +1,6 @@
 ## Installing
 Package manager: Install-Package Ensure4Net 
+
 .NET CLI: dotnet add package Ensure4Net
 
 # Ensure.NET
